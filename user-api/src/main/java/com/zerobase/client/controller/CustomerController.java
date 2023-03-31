@@ -1,10 +1,9 @@
 package com.zerobase.client.controller;
 
-import com.zerobase.client.service.CustomerService;
+import com.zerobase.client.service.customer.CustomerService;
 import com.zerobase.domain.customer.CustomerDto;
 import com.zerobase.domain.model.Customer;
 import com.zerobase.exception.CustomException;
-import com.zerobase.exception.ErrorCode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
