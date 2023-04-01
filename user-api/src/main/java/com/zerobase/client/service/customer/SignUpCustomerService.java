@@ -1,4 +1,4 @@
-package com.zerobase.client.service;
+package com.zerobase.client.service.customer;
 
 import com.zerobase.domain.SignUpForm;
 import com.zerobase.domain.model.Customer;
@@ -38,7 +38,7 @@ public class SignUpCustomerService {
         } else if (!customer.getVerificationCode().equals(code)) {
             throw new CustomException(WRONG_VERIFICATION);
         } else if(customer.getVerifyExpiredAt().isBefore(LocalDateTime.now())) {
-            throw new CustomException(EXPIRE_CODE);
+            throw new CustomException(WRONG_VERIFICATION);
         }
         customer.setVerify(true);
     }
