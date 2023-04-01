@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.zerobase.domain.config.JwtAuthenticationProvider;
 
 @RestController
-@RequestMapping(value = "/signIn")
+@RequestMapping(value = "/signin")
 @RequiredArgsConstructor
 public class SignInController {
 
