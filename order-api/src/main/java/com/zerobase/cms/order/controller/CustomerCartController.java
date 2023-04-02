@@ -15,13 +15,20 @@ import org.zerobase.domain.config.JwtAuthenticationProvider;
 public class CustomerCartController {
 
     // 임시 코드
-    private final CartService cartService;
+    private final CartApplication cartApplication;
     private final JwtAuthenticationProvider provider;
 
     @PostMapping
     public ResponseEntity<Cart> addCart(
             @RequestHeader(name = "X-AUTH-TOKEN") String token,
             @RequestBody AddProductCartForm form) {
-        return ResponseEntity.ok(cartService.addCart(provider.getUserVo(token).getId(), form));
+        return ResponseEntity.ok(cartApplication.addCart(provider.getUserVo(token).getId(), form));
+    }
+
+    @GetMapping
+    public ResponseEntity<Cart> showCart(
+            @RequestHeader(name = "X-AUTH-TOKEN") String token) {
+        return ResponseEntity.ok(cartApplication.getCart(provider.getUserVo(token).getId()));
+
     }
 }
