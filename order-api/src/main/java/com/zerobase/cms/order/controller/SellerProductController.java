@@ -1,4 +1,4 @@
-package com.zerobase.cms.order;
+package com.zerobase.cms.order.controller;
 
 import com.zerobase.cms.order.domain.product.*;
 import com.zerobase.cms.order.service.ProductItemService;
