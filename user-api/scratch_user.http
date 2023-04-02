@@ -12,7 +12,7 @@ Content-Type: application/json
 }
 
 ### 이메일 인증 ( 고객 )
-GET http://localhost:8080/signup/customer/verify?email=trsoo24@gmail.com&code=FFiOcoWrUI
+GET http://localhost:8080/signup/customer/verify?email=trsoo24@gmail.com&code=PIIGnecBUi
 
 ### 로그인 ( 고객 )
 POST http://localhost:8080/signin/customer
@@ -26,7 +26,8 @@ Content-Type: application/json
 ### 회원 정보 조회 ( 고객 )
 GET http://localhost:8080/customer/getInfo
 Content-Type: application/json
-X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYUNzdG04VzRzdHF2U1VKSXlSZzRvclZqSmxHM1NQU1ZVOWVxemxUbkxjPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODAzMzMyOTYsImV4cCI6MTY4MDQxOTY5Nn0.ZkNQ4LqoefpVrJyTupwWTnzTgSe1bhg9vrZFqHKLRLs
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYUNzdG04VzRzdHF2U1VKSXlSZzRvclZqSmxHM1NQU1ZVOWVxemxUbkxjPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2ODA0Mzg3MzcsImV4cCI6MTY4MDUyNTEzN30.A65A_KfndAGOKTQrjY6j9jwTDPU7AMTDUuxX5tknH5s
+
 
 ### 잔액 변경 ( 고객 )
 POST http://localhost:8080/customer/balance
