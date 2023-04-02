@@ -42,6 +42,26 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJDYUNzdG04VzRzdHF2U1VKSXlSZzRvclZqS
 ###################################
 
 ### 회원가입 ( 셀러 )
+POST http://localhost:8080/signup/seller
+Content-Type: application/json
+
+{
+  "birth": "1995-09-25",
+  "email": "trsoo24@gmail.com",
+  "name": "myName",
+  "password": "my",
+  "phone": "01012345678"
+}
+
+### 이메일 인증 ( 셀러 )
+GET http://localhost:8080/signup/seller/verify?email=trsoo24@gmail.com&code=OmS32IOY6v
 
 ### 로그인 ( 셀러 )
+POST http://localhost:8080/signin/seller
+Content-Type: application/json
+
+{
+  "email": "trsoo24@gmail.com",
+  "password": "my"
+}
 
